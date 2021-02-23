@@ -1,0 +1,251 @@
+/* BIG IT162 */
+
+/* --------Color Palette ---------- 
+#3b1f2b - Dark Purple -- rgba(59,31,43,1)  
+#c73e1d - Vermilion -- rgba(199,62,29,1)
+#2D4654 - Charcoal -- rgba(45,70,84,1)
+#FFFFFC - Baby Powder -- rgba(255,255,252,1)
+#6CCFF6 - Baby Blue -- rgba(108,207,246,1)  
+*/
+
+* {
+    margin:0;
+    padding:0;
+}
+
+html,body {
+    margin:0;
+    padding:0;
+}
+
+/*
+main.wrapper {
+    width: 90%;
+    margin:auto;
+    background-color:#2D4654;
+    color: #FFFFFC;
+    overflow:auto;
+}
+
+section {
+    float:left;
+    width:64%;
+    padding-left:2.5%;
+}
+
+aside {
+    float:right;
+    width:26%;
+    padding-right:2.5%;
+}
+*/
+
+header {
+    width: 100%
+    margin: auto;
+    background-color:rgba(59,31,43,1);
+    color: #FFFFFC;
+    text-align: center;
+}
+
+header h1 {
+    text-align:center;
+    padding-right: 2.5%;
+    color: #a23b72;
+}
+
+header a {
+    color: #c73e1d;
+    text-decoration: none;
+}
+
+header a:hover {
+    color:white;
+    background-color: #c73e1d;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
+    padding:.5em;
+    color: #2D4654;
+}
+
+h3 {
+    border-bottom: 2px solid #3b1f2b;
+}
+
+p {
+    margin:1em .8em;
+    color: black;
+}
+
+a {
+    color: #c73e1d;
+}
+
+a:hover {
+    color:white;
+    background-color: #c73e1d;
+}
+
+section ul{
+    padding-left: 7%;
+}
+
+aside ul {
+    padding-left: 7%;
+}
+
+footer {
+    width: 100%;
+    margin: auto;
+    text-align:center;
+    text-transform:uppercase;
+    clear:both;
+    background-color:rgba(59,31,43,1);
+    overflow:auto;
+}
+
+footer p {
+    padding:2em;
+    color: #6CCFF6;
+}
+
+footer a {
+    color: #c73e1d;
+    text-decoration: none;
+}
+ 
+footer a:hover {
+    color:white;
+    background-color: #c73e1d;
+}
+
+main.dot iframe {
+    border:0;
+    overflow:no;
+}
+
+
+/* START Global Embed Responsively Rules! */
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+} 
+
+.embed-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.embed-container.agenda-view {
+    display:none;
+}
+
+/* END Global Embed Responsively Rules! */
+
+
+    
+
+/* Phat PHONE Rules! */
+@media all and (max-width:736px) {
+
+    
+    /* Show Agenda View Calendar */
+    .embed-container.agenda-view {
+        display:block;
+    }
+    
+    /* Hide Month View Calendar */
+    .embed-container.month-view {
+        display:none;
+    }
+}
+
+
+/* START RESPONSIVE STYLES */
+
+/* DESKTOP */
+@media all and (min-width:1400px) {
+
+     main.wrapper {
+        width: 100%;
+        margin:auto;
+        background-color:rgba(45,70,84,.15);
+        color: black;
+        overflow:auto;
+    }
+
+    section {
+        float:left;
+        width:59%;
+        padding-left:7.5%;
+        background-color:white;
+    }
+
+    aside {
+        float:right;
+        width:21%;
+        padding-right:7.5%;
+        background-color:white;
+    }
+
+    aside h3{
+        border-bottom: 2px solid #3b1f2b;
+    }
+}
+
+    /* TABLET */
+@media all and (min-width:737px) and (max-width:1399px) {
+    
+     main.wrapper {
+        width: 100%;
+        margin:auto;
+        background-color:white;
+        color: black;
+        overflow:auto;
+    }
+
+    section {
+        float:left;
+        width:59%;
+        padding-left:7.5%;
+    }
+
+    aside {
+        float:right;
+        width:21%;
+        padding-right:7.5%;
+    }
+
+    aside h3{
+        border-bottom: 2px solid #3b1f2b;
+    }
+}
+
+/* PHONE */
+@media all and (max-width:736px) {
+    main.wrapper {
+        background-color: white;
+        color:#FFFFFC;
+    }
+    
+    img.phone {
+            width:100%;
+            border: 3px solid #4E0250;
+            margin: 5px;
+            display:inline-block;
+    }
+    
+    img.tablet, img.desktop {
+        display:none;
+        }  
+
+}
+/* END RESPONSIVE STYLES */
