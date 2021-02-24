@@ -1,41 +1,57 @@
 /* My WEB120 Portal Website Styles */
 
 /* --------Color Palette ----------
-#4E0250 - Russian Violet - Header/Footer
+#4E0250 - Russian Violet
 #801A86 - Mardi Gras
-#645986 - Dark Blue Gray - Main Font Color
+#645986 - Dark Blue Gray
 #8FE388 - Light Green 
-#58BC82 - Medium Sea Green */
+#58BC82 - Medium Sea Green
 
 /* ----------- Global Styles ----------- */
-html {
-    background-color:#ccc; 
-    box-sizing: border-box; 
+
+* {
+    margin:0;
+    padding:0;
 }
 
-*, *:before, *:after {
-  box-sizing: inherit;    
+html,body {
+    margin:0;
+    padding:0;
 }
 
 main.wrapper {
-    background-color:#fff;
-    color: #343434;
     margin: 0 auto;
     padding: 0;
+    background-color: #645986;
+    color: #343434;
     overflow:auto;
 }
 header {
-    background: #4E0250;
+    background: #333;
     top: 0;
     margin: 0;
-    color: #58BC82;
+    padding-top: 13px;
+    padding-left: 3%;
+    color: #645986;
+}
+
+h1 {
+    padding-bottom: 13px;
 }
 
 h1>a {
+    padding-right: 2.5%
     text-decoration: none;
     color: #58BC82;
 }
 
+p {
+    color: white;
+}
+
+a {
+    color: #8FE388;
+}
 /* font awesome icon styles */
 i.logo {
     color: darkred; /* a less boring color */
@@ -55,14 +71,18 @@ i.logo {
 */
 
 footer {
+    height: 55px;
     clear:both;
-    background-color: #fff; /* #4E0250, #fff */
-    color: *#58BC82; /*#58BC82 */
+    background-color: #333;
+    color: *#fff;
 }
 
 footer p {
+    margin: 0 auto;
     text-align: center;
 }
+
+
 
 /* Embed Responsively Rules! */
 div.embed-container {
@@ -89,28 +109,33 @@ div.embed-container iframe {
 @media all and (min-width:1400px) {
 	
    main.wrapper {
-		width:80%;
-        padding: 10px;
-		margin:auto;
+        margin: 0 auto;
 	}
 
-    .section-main {
-		width:65%;
-        padding: 5px;
-		float:left;
-	}
+    section {
+        padding-bottom: 2.5%;
+        padding-left: 2.5%;
+        width:59.5%;
+        float:left;
+    }
 	
-     .aside-main {	
-		width:34%;
-        padding: 5px;
+     aside {	
+		width:31.5%;
+        padding-right: 2.5%;
+        padding-bottom: 2.5%;
 		float:right;
 	}
-			
+	
+    section > h2, aside > h2 {
+        padding-top: 2.5%;
+        padding-bottom: 2.5%;
+    }
+
     img.desktop {
             float: left;
-       		width:25%;
-            border: 5px solid #4E0250;
-            margin: 10px; 
+       		width:15%;
+            margin-right: 13px;
+            border: 3px solid #333;
             display:inline-block;
     }
     
@@ -130,20 +155,29 @@ div.embed-container iframe {
 @media all and (min-width:737px) and (max-width:1399px) {
 	
 	section {
-		width:60%;
+        padding-right: 1%;
+        padding-bottom: 2.5%;
+        padding-left: 2.5%;
+		width:55.5%;
 		float:left;
 	}
+    section > h2, aside > h2 {
+        padding-top: 2.5%;
+        padding-bottom: 2.5%;
+    }
 	
 	aside {	
-		width:39%;
-        padding: 3px;
+        padding-right: 2.5%;
+        padding-bottom: 2.5%;
+        padding-left: 1%;
+		width:36.5%;
 		float:right;
 	}
 	
     img.tablet {
-       		width:100%;
-            padding: 1px;
-            border: 3px solid #4E0250;
+       		width:90%;
+            margin-bottom: 2.5%;
+            border: 7px solid #333;
             display:inline-block;
     }
     
@@ -161,12 +195,24 @@ div.embed-container iframe {
 
 /* PHONE */
 @media all and (max-width:736px) {
+
+    section, aside {
+        padding: 9px 7px;
+    }
+    section > h2, aside > h2 {
+        padding: 7px;
+    }
+
+    p {
+        padding-right: 3px;
+        padding-left: 3px;
+    }
     
     img.phone {
-       		width:100%;
-            border: 3px solid #4E0250;
-            margin: 5px;
-            display:inline-block;
+       		width:90%;
+            border: 3px solid #333;
+            margin: 7px auto 9px;
+            display: block;
     }
     
     img.tablet, img.desktop {
