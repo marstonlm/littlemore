@@ -71,6 +71,9 @@ i.logo {
 */
 
 footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 55px;
     clear:both;
     background-color: #333;
