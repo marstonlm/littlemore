@@ -25,11 +25,11 @@ define('THIS_PAGE',basename($_SERVER['PHP_SELF']));
 //die; 
 
 switch(THIS_PAGE){
-	case '../index.php':
-		$title = " IT 162 Portal";
+//	case '../index.php':
+//		$title = " IT 162 Portal";
 //		$logo = 'fa-home';
-		$pageID = 'Home';
-	break; 
+//		$pageID = 'Home';
+//	break; 
 
 	case 'index.php':
 		$title = " L. Marston's IT162 BIG Project";
