@@ -19,18 +19,13 @@
 	<!-- START Wrapper -->
 	<main class="wrapper">
 		<header>
-			<h1><a href="index.php"><i class="logo fa fa-home"></i> BIG Project by Luann Marston</a></h1>
-
+			<h1><a href="index.php"><i class="logo fa <?=$logo?>"<?=$logo_color?>></i> BIG Project by Luann Marston</a></h1>
 			<nav id="cssmenu">
 				<ul>
 					<li><a href="../index.php"><span><i class="fa fa-fw fa-bank"></i> IT162 Portal</span></a></li>
-
 					<li><a href="index.php"><span><i class="fa fa-fw fa-home"></i> Home</span></a></li>
-
 					<li><a href="flexbox.php"><span>Flexbox</span></a></li>
-
 					<li><a href="galleries.php"><span> Galleries</span></a></li>
-
 					<li><a href="#"><span><i class="fa fa-fw fa-chevron-down"></i> Google</span></a>
 						<ul>
 							<li><a href="map.php"><span>Map</span></a></li>
@@ -38,7 +33,6 @@
 							<li><a href="youtube.php"><span>YouTube</span></a></li>
 						</ul>
 					</li>
-
 					<li><a href="siteapp.php"><span> Site vs App</span></a></li>
 					<li><a href="webcam.php"><span> Web Cam</span></a></li>
 				</ul>
