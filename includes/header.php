@@ -32,7 +32,5 @@ END COMMENT OUT NAV -->
     </ul>
   </nav>
 </header>
-        
-<!-- START LEFT COL -->
-<section>
- <h2 class="pageID"><?=$pageID?></h2>
+<div class="div-page">
+  <h2 class="pageID"><?=$pageID?></h2>
