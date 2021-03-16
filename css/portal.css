@@ -1,4 +1,4 @@
-/* My WEB120 Portal Website Styles */
+/ * My WEB120 Portal Website Styles */
 
 /* --------Color Palette ----------
 #4E0250 - Russian Violet - rgba(78, 2, 80, 1)
@@ -324,26 +324,39 @@ table {
     border: 1px solid rgba(100, 89, 134, .25);
 }
 
-th {
+td>a {
+    color: #801A86;
+}
+
+.client th {
+    vertical-align: top;
+    padding-right: 21px;
+    padding-left: 10px;
+    text-align: left;
+}
+
+ .client td {
     vertical-align: top;
     padding: 5px;
 }
 
-td {
-        vertical-align: top;
-    padding: 5px;
+.audience table {
+    width: 90%;
 }
-
-.client th {
-    text-align: left;
-    padding-right: 21px;
-}
-
 .audience th {
+    vertical-align: top;
+    padding-right: 21px;
+    padding-bottom: 15px;
     text-align: center;
 }
 
 .audience td {
+    width: 26%;
+    vertical-align: top;
+    padding-top: 5px;
+    padding-right: 21px;
+    padding-left: 10px;
     text-align: left;
 }
+
 /* ----- END AIA TABLE ----- */
